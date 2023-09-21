@@ -8,14 +8,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>FGlabs. - Welcome to the jungle</title>
+        <title>
+          Welcome to FGlabs. - Making ideas realize with technology and
+          creativity
+        </title>
       </Head>
 
       <Layout>
-        <section className="container bg-pink-500 text-center">
-          <Typography variant="h5" className="font-bold text-white">
-            Homepage
-          </Typography>
+        <section className="container">
+          <span className="text-white">Homepage</span>
         </section>
       </Layout>
     </>
