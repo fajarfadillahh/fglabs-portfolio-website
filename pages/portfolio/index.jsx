@@ -35,8 +35,10 @@ export default function Portfolio() {
       </Head>
 
       <Layout>
-        <section className="pb-[140px] pt-[180px]">
-          <div className="container grid gap-20">
+        <section className="relative pb-[140px] pt-[180px]">
+          <div className="absolute -left-[150px] top-[320px] h-[300px] w-[300px] rounded-full bg-pink-500 blur-[150px]" />
+
+          <div className="container relative grid gap-20">
             <div className="flex flex-col items-center text-center">
               <Typography className="mb-4 text-[24px] font-bold text-white">
                 Our portfolio
