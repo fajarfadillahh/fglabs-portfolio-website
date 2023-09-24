@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { Button, Typography } from "@material-tailwind/react";
 
 // navbar link
@@ -19,8 +20,24 @@ const navbarLink = [
 ];
 
 export default function Navbar() {
+  const [stickyNavbar, setStickyNavbar] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 5) {
+        setStickyNavbar(true);
+      } else {
+        setStickyNavbar(false);
+      }
+    });
+  }, []);
+
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 mx-auto max-w-[1440px] bg-transparent">
+    <nav
+      className={`fixed inset-x-0 top-0 z-50 mx-auto max-w-[1440px] ${
+        stickyNavbar ? "bg-gray-950/30 backdrop-blur-xl" : "bg-transparent"
+      }`}
+    >
       <div className="container flex h-24 items-center justify-between">
         <Link href="/" className="inline-flex items-center gap-2">
           <Image
