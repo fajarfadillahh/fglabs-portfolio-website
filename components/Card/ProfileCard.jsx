@@ -1,18 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
-import { Tooltip, Typography } from "@material-tailwind/react";
+import { Avatar, Tooltip, Typography } from "@material-tailwind/react";
 
 export default function ProfileCard({ team }) {
   return (
-    <div className="flex w-full max-w-[380px] items-center gap-4">
-      <Image
-        src={team.image}
-        alt="profile image"
-        width={100}
-        height={100}
-        priority={true}
-        className="rounded-full"
-      />
+    <div className="flex w-full max-w-[400px] items-center gap-4">
+      <Avatar src={team.image} alt="profile image" size="xxl" />
 
       <div className="grid items-start gap-4">
         <div>
@@ -38,7 +30,7 @@ export default function ProfileCard({ team }) {
                 <Link
                   key={index}
                   href={sosmed.path}
-                  className="rounded-full bg-[#2E3235] p-1.5 text-[1.5rem] text-gray-500"
+                  className="rounded-full bg-[#2E3235] p-1.5 text-[1.5rem] text-gray-500 hover:bg-pink-500 hover:text-white"
                 >
                   {sosmed.icon}
                 </Link>

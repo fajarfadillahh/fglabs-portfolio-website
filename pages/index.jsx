@@ -2,11 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import { Button, Typography } from "@material-tailwind/react";
 import { HiOutlineArrowCircleRight } from "react-icons/hi";
+import { useRouter } from "next/router";
 
 // import components
 import Layout from "@/components/Layout";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -41,6 +44,7 @@ export default function Home() {
               size="lg"
               color="pink"
               className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
+              onClick={() => router.push("/portfolio")}
             >
               See our portfolio
               <HiOutlineArrowCircleRight className="text-[1.2rem]" />
@@ -53,7 +57,7 @@ export default function Home() {
 
           <div className="container relative grid grid-cols-2 items-center gap-16">
             <div>
-              <Typography className="mb-4 text-[24px] font-bold">
+              <Typography className="mb-4 text-[22px] font-bold">
                 🎨
                 <span className="bg-gradient-to-tr from-pink-500 to-white bg-clip-text capitalize text-transparent">
                   design, code, deploy
@@ -91,10 +95,16 @@ export default function Home() {
           <div className="absolute -left-[175px] bottom-0 h-[250px] w-[250px] rounded-full bg-pink-500 blur-[120px]" />
 
           <div className="container relative grid grid-cols-2 items-center gap-16">
-            <div className="h-[400px] w-[544px] bg-[#303438]" />
+            <Image
+              src="/assets/image-2.png"
+              alt="image"
+              width={541}
+              height={429}
+              priority={true}
+            />
 
             <div className="justify-self-end">
-              <Typography className="mb-4 text-[24px] font-bold">
+              <Typography className="mb-4 text-[22px] font-bold">
                 🚀
                 <span className="bg-gradient-to-tr from-pink-500 to-white bg-clip-text capitalize text-transparent">
                   fast, advanced, clean
