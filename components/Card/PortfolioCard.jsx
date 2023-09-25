@@ -1,7 +1,11 @@
-import { Button, Tooltip, Typography } from "@material-tailwind/react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { HiOutlineArrowCircleRight } from "react-icons/hi";
+import { Button, Tooltip, Typography } from "@material-tailwind/react";
 
 export default function PortfolioCard({ portfolio }) {
+  const router = useRouter();
+
   return (
     <div className="grid w-full max-w-[544px] gap-8">
       <div className="h-[320px] w-full bg-[#303438]" />
@@ -33,17 +37,20 @@ export default function PortfolioCard({ portfolio }) {
             unmount: { scale: 0, y: 25 },
           }}
         >
-          <Typography className="mb-8 line-clamp-2 w-full text-[32px] font-extrabold leading-[112%] text-white">
-            {portfolio.title}
-          </Typography>
+          <Link href="/portfolio/detail/2104">
+            <Typography className="mb-8 line-clamp-2 w-full text-[32px] font-extrabold leading-[112%] text-white hover:text-pink-500">
+              {portfolio.title}
+            </Typography>
+          </Link>
         </Tooltip>
 
         <Button
           size="md"
           color="pink"
           className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
+          onClick={() => router.push("/portfolio/detail/2104")}
         >
-          Learn more
+          Read more
           <HiOutlineArrowCircleRight className="text-[1.2rem]" />
         </Button>
       </div>

@@ -72,7 +72,7 @@ export default function Home() {
                 color="pink"
                 className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
               >
-                Learn more
+                Read more
                 <HiOutlineArrowCircleRight className="text-[1.2rem]" />
               </Button>
             </div>
@@ -107,7 +107,7 @@ export default function Home() {
                 color="pink"
                 className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
               >
-                Learn more
+                Read more
                 <HiOutlineArrowCircleRight className="text-[1.2rem]" />
               </Button>
             </div>

@@ -61,7 +61,7 @@ export default function DetailPortfolio() {
                     color="white"
                     className="mb-3 text-[28px] font-bold"
                   >
-                    Developments
+                    Deployments
                   </Typography>
                 </div>
               </div>
