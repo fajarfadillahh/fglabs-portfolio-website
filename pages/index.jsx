@@ -77,7 +77,13 @@ export default function Home() {
               </Button>
             </div>
 
-            <div className="h-[400px] w-[544px] bg-[#303438]" />
+            <Image
+              src="/assets/image-1.png"
+              alt="image"
+              width={580}
+              height={430}
+              priority={true}
+            />
           </div>
         </section>
 
