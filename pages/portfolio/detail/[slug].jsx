@@ -91,15 +91,15 @@ export default function DetailPortfolio({ data }) {
                       return (
                         <Tooltip
                           content={tech.name}
-                          placement="top-center"
+                          placement="top"
                           animate={{
                             mount: { scale: 1, y: 0 },
                             unmount: { scale: 0, y: 25 },
                           }}
+                          key={index}
                         >
                           <Image
                             src={tech.url}
-                            key={index}
                             width={32}
                             height={32}
                             alt={`image ${tech.name}`}

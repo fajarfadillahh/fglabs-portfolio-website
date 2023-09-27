@@ -16,6 +16,7 @@ export default function PortfolioCard({ portfolio }) {
           height={320}
           className="h-full w-full object-cover object-center"
           alt={`image ${portfolio.title}`}
+          priority={true}
         />
       </div>
 

@@ -25,7 +25,10 @@
         "url": "/content/techs/icon-figma.svg"
       }
     ],
-    "deployments": ["https://ponic-voting.vercel.app", "https://ponic.site"],
+    "deployments": [
+      "https://ponic-voting.vercel.app",
+      "https://ponic.site"
+    ],
     "tags": [
       {
         "name": "UI Design",
@@ -52,32 +55,35 @@
     }
   },
   {
-    "title": "Ponic Backend: Combination Of The Latest Technologies",
-    "slug": "ponic-backend-combination-of-the-latest-technologies",
+    "title": "Ponic Rest API: Combination Of The Modern Technologies",
+    "slug": "ponic-rest-api-combination-of-the-modern-technologies",
     "image": "/content/image/portfolio-2.svg",
     "techs": [
       {
         "name": "Typescript",
-        "url": "/content/techs/ts.svg"
+        "url": "/content/techs/icon-ts.svg"
       },
       {
         "name": "Node JS",
-        "url": "/content/techs/nodejs.svg"
+        "url": "/content/techs/icon-nodejs.svg"
       },
       {
         "name": "Fastify",
-        "url": "/content/techs/fastify.svg"
+        "url": "/content/techs/icon-fastify.svg"
       },
       {
         "name": "NGINX",
-        "url": "/content/techs/nginx.svg"
+        "url": "/content/techs/icon-nginx.svg"
       },
       {
-        "name": "Neon PostgreSQL",
-        "url": "/content/techs/neon.svg"
+        "name": "PostgreSQL",
+        "url": "/content/techs/icon-postgresql.svg"
       }
     ],
-    "deployments": ["https://api.ponic.site", "https://ponic.cyclic.app"],
+    "deployments": [
+      "https://api.ponic.site",
+      "https://ponic.cyclic.app"
+    ],
     "tags": [
       {
         "name": "Database",
@@ -93,13 +99,19 @@
       }
     ],
     "content": {
-      "overview": "Ini overview ya teman-teman.",
+      "overview": "Ponic REST API is a backend service designed to facilitate the voting process in our electronic pooling platform (Ponic) with a modern tech stack and fast response times. By emphasizing efficiency and user-friendliness, we've taken on the task of making our software not only reusable but also capable of seamless evolution in the post-development phase.",
       "features": [
-        "User Registration & User Login",
-        "NGINX load balancer (soon)",
-        "TAR DULU GUE MASIH PUSING"
+        "User Registration API",
+        "User Login API",
+        "Create Rooms API",
+        "Delete Rooms API",
+        "Get Rooms API",
+        "Get Rooms By Code API",
+        "Get Rooms By Id API",
+        "Update Rooms API",
+        "Create Votes API"
       ],
-      "mission": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nobis soluta ratione laborum provident minima ipsam iusto quidem doloremque tempora."
+      "mission": "Ponic's mission is to help strengthen digital democracy by providing reliable, secure, and easy-to-use tools for individuals, communities, and organizations to take part in the decision-making process. We are committed to supporting transparency, integrity and active participation at all levels of voting."
     }
   }
 ]
