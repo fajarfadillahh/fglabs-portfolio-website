@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Ponic Backend: Combination Of The Latest Technologies",
+    "slug": "ponic-backend-combination-of-the-latest-technologies",
+    "image": "/content/image/ponic-be-test.png",
+    "techs": [
+      {
+        "name": "Typescript",
+        "url": "/content/techs/ts.svg"
+      },
+      {
+        "name": "Node JS",
+        "url": "/content/techs/nodejs.svg"
+      },
+      {
+        "name": "Fastify",
+        "url": "/content/techs/fastify.svg"
+      },
+      {
+        "name": "NGINX",
+        "url": "/content/techs/nginx.svg"
+      },
+      {
+        "name": "Neon PostgreSQL",
+        "url": "/content/techs/neon.svg"
+      }
+    ],
+    "deployments": [
+      "https://api.ponic.site",
+      "https://ponic.cyclic.app"
+    ],
+    "tags": [
+      {
+        "name": "Database",
+        "value": "Database"
+      },
+      {
+        "name": "Backend",
+        "value": "Backend"
+      },
+      {
+        "name": "Fastify",
+        "value": "Fastify"
+      }
+    ],
+    "content": {
+      "overview": "Ini overview ya teman-teman.",
+      "features": [
+        "User Registration & User Login",
+        "NGINX load balancer (soon)",
+        "TAR DULU GUE MASIH PUSING"
+      ],
+      "mission": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nobis soluta ratione laborum provident minima ipsam iusto quidem doloremque tempora."
+    }
+  }
+]
