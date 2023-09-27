@@ -23,6 +23,7 @@ export default function PortfolioCard({ portfolio }) {
             );
           })}
         </div>
+
         <Tooltip
           content={
             <div className="max-w-[320px]">
