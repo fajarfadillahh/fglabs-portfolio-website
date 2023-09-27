@@ -25,10 +25,7 @@
         "url": "/content/techs/icon-figma.svg"
       }
     ],
-    "deployments": [
-      "https://ponic-voting.vercel.app",
-      "https://ponic.site"
-    ],
+    "deployments": ["https://ponic-voting.vercel.app", "https://ponic.site"],
     "tags": [
       {
         "name": "UI Design",
@@ -39,8 +36,8 @@
         "value": "Frontend"
       },
       {
-        "name": "NextJS",
-        "value": "NextJS"
+        "name": "Next JS",
+        "value": "Next JS"
       }
     ],
     "content": {
@@ -80,10 +77,7 @@
         "url": "/content/techs/icon-postgresql.svg"
       }
     ],
-    "deployments": [
-      "https://api.ponic.site",
-      "https://ponic.cyclic.app"
-    ],
+    "deployments": ["https://api.ponic.site", "https://ponic.cyclic.app"],
     "tags": [
       {
         "name": "Database",
@@ -112,6 +106,62 @@
         "Create Votes API"
       ],
       "mission": "Ponic's mission is to help strengthen digital democracy by providing reliable, secure, and easy-to-use tools for individuals, communities, and organizations to take part in the decision-making process. We are committed to supporting transparency, integrity and active participation at all levels of voting."
+    }
+  },
+  {
+    "title": "Muslimify Quran: Easy Access To The Wisdom of The Quran",
+    "slug": "muslimify-quran-easy-access-to-the-wisdom-of-the-quran",
+    "image": "/content/image/portfolio-3.svg",
+    "techs": [
+      {
+        "name": "Next JS",
+        "url": "/content/techs/icon-nextjs.svg"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "/content/techs/icon-tailwindcss.svg"
+      },
+      {
+        "name": "React JS",
+        "url": "/content/techs/icon-reactjs.svg"
+      },
+      {
+        "name": "CSS",
+        "url": "/content/techs/icon-css.svg"
+      },
+      {
+        "name": "Figma",
+        "url": "/content/techs/icon-figma.svg"
+      }
+    ],
+    "deployments": [
+      "https://muslimify-quran.vercel.app/",
+      "muslimify.vercel.app"
+    ],
+    "tags": [
+      {
+        "name": "Mobile App",
+        "value": "Mobile App"
+      },
+      {
+        "name": "Frontend",
+        "value": "Frontend"
+      },
+      {
+        "name": "React JS",
+        "value": "React JS"
+      }
+    ],
+    "content": {
+      "overview": "Muslimify is a web application designed to support Muslims in the exploration and understanding of the Koran. Muslimify provides fast and easy access to the holy text of the Koran, as well as a variety of tools to improve your understanding of the teachings it contains.",
+      "features": [
+        "Quran Text Search: Search for verses and key words in the Quran quickly and accurately.",
+        "Translation and Tafsir: Access translations of the Al-Quran in various languages ​​and tafsir to explore the meanings in the text.",
+        "Quran Text Search: Search for verses and key words in the Quran quickly and accurately.",
+        "Asmaul Husna: Discover and explore Asmaul Husna, the 99 beautiful names of Allah, along with their meanings and significance.",
+        "Muslimify is designed using the latest technology to provide comfort for users."
+      ],
+      "mission": "Muslimify's main mission is to be a loyal partner for Muslims in their journey to study the Koran, understand Asmaul Husna, and enrich their understanding of the Islamic religion. With a strong determination to provide benefits to others."
     }
   }
 ]
