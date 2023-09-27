@@ -29,7 +29,7 @@ export default function Portfolio() {
               </Typography>
             </div>
 
-            <div className="grid grid-cols-2 items-start gap-8">
+            <div className="grid grid-cols-2 items-start gap-x-8 gap-y-16">
               {data.map((portfolio, index) => {
                 return <PortfolioCard key={index} portfolio={portfolio} />;
               })}

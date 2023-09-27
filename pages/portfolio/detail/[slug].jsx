@@ -45,14 +45,14 @@ export default function DetailPortfolio({ data }) {
               </div>
             </div>
 
-            <div className="mx-20 flex items-start justify-between gap-32">
-              <div className="grid gap-6">
+            <div className="flex items-start justify-evenly gap-16">
+              <div className="grid max-w-[545px] gap-6">
                 <div className="grid gap-3">
                   <Typography color="white" className="text-[28px] font-bold">
                     Overview
                   </Typography>
 
-                  <Typography className="max-w-[545px] font-semibold leading-[160%] text-gray-500">
+                  <Typography className="font-semibold leading-[160%] text-gray-500">
                     {content.overview}
                   </Typography>
                 </div>
@@ -62,7 +62,7 @@ export default function DetailPortfolio({ data }) {
                     Main Feature
                   </Typography>
 
-                  <ol className="ml-5 grid max-w-[545px] list-decimal gap-1.5 font-semibold leading-[160%] text-gray-500">
+                  <ol className="ml-5 grid list-decimal gap-1.5 font-semibold leading-[160%] text-gray-500">
                     {content.features.map((feature, index) => {
                       return <li key={index}>{feature}</li>;
                     })}
@@ -74,7 +74,7 @@ export default function DetailPortfolio({ data }) {
                     Our Mission
                   </Typography>
 
-                  <Typography className="max-w-[545px] font-semibold leading-[160%] text-gray-500">
+                  <Typography className="font-semibold leading-[160%] text-gray-500">
                     {content.mission}
                   </Typography>
                 </div>
