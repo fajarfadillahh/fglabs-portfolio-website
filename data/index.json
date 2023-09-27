@@ -1,8 +1,60 @@
 [
   {
+    "title": "Ponic: The Latest Solution in Electronic Polling",
+    "slug": "ponic-the-latest-solution-in-electronic-polling",
+    "image": "/content/image/portfolio-1.svg",
+    "techs": [
+      {
+        "name": "Next JS",
+        "url": "/content/techs/icon-nextjs.svg"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "/content/techs/icon-tailwindcss.svg"
+      },
+      {
+        "name": "React JS",
+        "url": "/content/techs/icon-reactjs.svg"
+      },
+      {
+        "name": "CSS",
+        "url": "/content/techs/icon-css.svg"
+      },
+      {
+        "name": "Figma",
+        "url": "/content/techs/icon-figma.svg"
+      }
+    ],
+    "deployments": ["https://ponic-voting.vercel.app", "https://ponic.site"],
+    "tags": [
+      {
+        "name": "UI Design",
+        "value": "UI Design"
+      },
+      {
+        "name": "Frontend",
+        "value": "Frontend"
+      },
+      {
+        "name": "NextJS",
+        "value": "NextJS"
+      }
+    ],
+    "content": {
+      "overview": "Ponic is an innovative electronic voting platform that changes the way we participate in decision-making processes. Built with a vision to bring people closer to their leaders and encourage active engagement in digital democracy, Ponic brings polls and surveys into the palm of your hand.",
+      "features": [
+        "Easy Voting: Ponic makes voting an easier and accessible experience for everyone. With an intuitive interface, voters can quickly and easily make their voices heard in various types of voting.",
+        "Real-time Monitoring: With Ponic, users can monitor voting results in real-time. Voting results are available instantly and transparently, eliminating doubt and enhancing the integrity of the democratic process.",
+        "Ease of Administration: For poll managers, Ponic offers powerful administration tools for designing, managing, and analyzing polls. This allows election administrators to run the process with greater efficiency.",
+        "Scalability and Adaptability: Ponic is designed to handle voting on a small to large scale, making it a suitable solution for elections, student elections, corporate voting, and more."
+      ],
+      "mission": "Ponic's mission is to help strengthen digital democracy by providing reliable, secure, and easy-to-use tools for individuals, communities, and organizations to take part in the decision-making process. We are committed to supporting transparency, integrity and active participation at all levels of voting."
+    }
+  },
+  {
     "title": "Ponic Backend: Combination Of The Latest Technologies",
     "slug": "ponic-backend-combination-of-the-latest-technologies",
-    "image": "/content/image/ponic-be-test.png",
+    "image": "/content/image/portfolio-2.svg",
     "techs": [
       {
         "name": "Typescript",
@@ -25,10 +77,7 @@
         "url": "/content/techs/neon.svg"
       }
     ],
-    "deployments": [
-      "https://api.ponic.site",
-      "https://ponic.cyclic.app"
-    ],
+    "deployments": ["https://api.ponic.site", "https://ponic.cyclic.app"],
     "tags": [
       {
         "name": "Database",

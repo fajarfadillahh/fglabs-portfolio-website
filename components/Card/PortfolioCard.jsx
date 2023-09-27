@@ -12,9 +12,9 @@ export default function PortfolioCard({ portfolio }) {
       <div className="h-[320px] w-full">
         <Image
           src={`${portfolio.image}`}
-          width={1920}
-          height={1080}
-          className="h-full w-full object-contain"
+          width={544}
+          height={320}
+          className="h-full w-full object-cover object-center"
           alt={`image ${portfolio.title}`}
         />
       </div>
