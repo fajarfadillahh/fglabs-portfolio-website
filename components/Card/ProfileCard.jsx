@@ -21,11 +21,12 @@ export default function ProfileCard({ team }) {
             return (
               <Tooltip
                 content={sosmed.text}
-                placement="top-center"
+                placement="top"
                 animate={{
                   mount: { scale: 1, y: 0 },
                   unmount: { scale: 0, y: 25 },
                 }}
+                key={index}
               >
                 <Link
                   key={index}
