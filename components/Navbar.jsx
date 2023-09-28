@@ -55,7 +55,7 @@ export default function Navbar() {
         </Link>
 
         <div
-          className={`fixed right-[6%] top-24 flex w-[260px] origin-top-right flex-col gap-8 bg-gray-800 px-7 py-8 transition md:static md:inset-0 md:w-auto md:scale-100 md:flex-row md:gap-12 md:bg-transparent md:p-0 ${
+          className={`fixed right-[6%] top-24 flex w-[260px] origin-top-right flex-col gap-8 rounded-md bg-gray-800 px-7 py-8 transition md:static md:inset-0 md:w-auto md:scale-100 md:flex-row md:gap-12 md:bg-transparent md:p-0 ${
             navbarOpen ? "scale-100" : "scale-0"
           }`}
         >
@@ -76,14 +76,14 @@ export default function Navbar() {
           <Button
             size="lg"
             color="pink"
-            className="w-full rounded-none text-base font-bold normal-case md:w-auto"
+            className="w-full rounded-md text-base font-bold normal-case md:w-auto"
           >
             Contact us
           </Button>
         </div>
 
         <div
-          className="cursor-pointer p-1 text-[1.3rem] text-white hover:bg-gray-800 md:hidden"
+          className="cursor-pointer rounded-md p-1 text-[1.3rem] text-white hover:bg-gray-800 md:hidden"
           onClick={() => setNavbarOpen(!navbarOpen)}
         >
           <HiOutlineMenuAlt2 />

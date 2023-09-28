@@ -38,7 +38,7 @@ export default function Home() {
             <Button
               size="lg"
               color="pink"
-              className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
+              className="inline-flex items-center gap-2 rounded-md text-base font-bold normal-case"
               onClick={() => router.push("/portfolio")}
             >
               See our portfolio
@@ -61,19 +61,11 @@ export default function Home() {
               <Typography className="mx-auto mb-6 max-w-[500px] text-[42px] font-black capitalize leading-[112%] text-white">
                 Cool design, powerful Code, fast and efficient development
               </Typography>
-              <Typography className="mx-auto mb-8 max-w-[470px] text-base font-semibold leading-[160%] text-gray-500">
+              <Typography className="mx-auto max-w-[470px] text-base font-semibold leading-[160%] text-gray-500">
                 FGLabs prides itself on its combination of inspiring design,
                 advanced code, and fast development. We are ready to help you
                 bring your ideas to the digital world in cool style.
               </Typography>
-              <Button
-                size="lg"
-                color="pink"
-                className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
-              >
-                Read more
-                <HiOutlineArrowCircleRight className="text-[1.2rem]" />
-              </Button>
             </div>
 
             <Image
@@ -110,32 +102,24 @@ export default function Home() {
               <Typography className="mx-auto mb-6 max-w-[500px] text-[42px] font-black capitalize leading-[112%] text-white">
                 Fast Technology, Advanced Code, and Clean Organization
               </Typography>
-              <Typography className="mx-auto mb-8 max-w-[490px] text-base font-semibold leading-[160%] text-gray-500">
+              <Typography className="mx-auto max-w-[490px] text-base font-semibold leading-[160%] text-gray-500">
                 We combine speed of execution, advanced technical expertise, and
                 a focus on clean coding to create digital products that not only
                 run smoothly but can also be easily developed and maintained.
               </Typography>
-              <Button
-                size="lg"
-                color="pink"
-                className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
-              >
-                Read more
-                <HiOutlineArrowCircleRight className="text-[1.2rem]" />
-              </Button>
             </div>
           </div>
         </section>
 
         <section className="pb-[140px]">
-          <div className="container flex h-[380px] flex-col items-center justify-center gap-8 bg-pink-500">
-            <Typography className="max-w-[450px] text-center text-[32px] font-black capitalize leading-[112%] text-white md:text-[42px]">
+          <div className="container flex flex-col items-center justify-center gap-8 bg-pink-500 px-6 py-20 md:h-[380px] md:p-0">
+            <Typography className="max-w-[450px] text-center text-[28px] font-black capitalize leading-[112%] text-white md:text-[42px]">
               Start creating a cool website with us
             </Typography>
             <Button
               size="lg"
               color="white"
-              className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case text-pink-500"
+              className="inline-flex items-center gap-2 rounded-md text-base font-bold normal-case text-pink-500"
             >
               Contact us
               <HiOutlineArrowCircleRight className="text-[1.2rem]" />

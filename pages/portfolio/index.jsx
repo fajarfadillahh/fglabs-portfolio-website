@@ -23,12 +23,12 @@ export default function Portfolio({ data }) {
               <Typography className="mb-4 text-[24px] font-bold text-white">
                 Our portfolio
               </Typography>
-              <Typography className="max-w-[725px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[56px] font-black leading-[108%] text-transparent">
+              <Typography className="max-w-[725px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[42px] font-black leading-[108%] text-transparent sm:text-[56px]">
                 Creative Portfolio: FGlabs Latest Works
               </Typography>
             </div>
 
-            <div className="grid grid-cols-2 items-start gap-x-8 gap-y-16">
+            <div className="grid justify-center gap-10 lg:grid-cols-2 lg:items-start lg:gap-y-16">
               {data.map((portfolio, index) => {
                 return <PortfolioCard key={index} portfolio={portfolio} />;
               })}

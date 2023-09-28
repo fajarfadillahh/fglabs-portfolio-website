@@ -9,16 +9,14 @@ export default function PortfolioCard({ portfolio }) {
 
   return (
     <div className="grid w-full max-w-[544px] gap-8">
-      <div className="h-[320px] w-full">
-        <Image
-          src={`${portfolio.image}`}
-          width={1920}
-          height={1080}
-          className="h-full w-full object-cover object-center"
-          alt={`image ${portfolio.title}`}
-          priority={true}
-        />
-      </div>
+      <Image
+        src={`${portfolio.image}`}
+        width={1920}
+        height={1080}
+        className="max-h-[320px] w-full object-contain object-center"
+        alt={`image ${portfolio.title}`}
+        priority={true}
+      />
 
       <div>
         <div className="mb-4 inline-flex items-center gap-3">
@@ -49,7 +47,7 @@ export default function PortfolioCard({ portfolio }) {
           }}
         >
           <Link href={`/portfolio/detail/${portfolio.slug}`}>
-            <Typography className="mb-8 line-clamp-2 w-full text-[32px] font-extrabold leading-[112%] text-white hover:text-pink-500">
+            <Typography className="mb-6 line-clamp-2 w-full text-[24px] font-extrabold leading-[112%] text-white hover:text-pink-500 md:text-[32px]">
               {portfolio.title}
             </Typography>
           </Link>
@@ -58,7 +56,7 @@ export default function PortfolioCard({ portfolio }) {
         <Button
           size="md"
           color="pink"
-          className="inline-flex items-center gap-2 rounded-none text-base font-bold normal-case"
+          className="inline-flex items-center gap-2 rounded-md text-base font-bold normal-case"
           onClick={() => router.push(`/portfolio/detail/${portfolio.slug}`)}
         >
           Read more
