@@ -23,12 +23,12 @@ export default function Team({ teams }) {
               <Typography className="mb-4 text-[24px] font-bold text-white">
                 Solid teams
               </Typography>
-              <Typography className="max-w-[725px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[56px] font-black leading-[108%] text-transparent">
+              <Typography className="max-w-[725px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[42px] font-black leading-[108%] text-transparent sm:text-[56px]">
                 FGlabs: Introducing Our Talented Team
               </Typography>
             </div>
 
-            <div className="mt-5 flex items-center justify-center gap-20 text-white">
+            <div className="mt-5 flex flex-col items-center justify-center gap-20 text-white lg:flex-row">
               {teams.map((team, index) => {
                 return <ProfileCard key={index} team={team} />;
               })}

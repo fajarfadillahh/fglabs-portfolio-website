@@ -5,11 +5,15 @@ import { RiGithubFill, RiInstagramLine, RiGlobalLine } from "react-icons/ri";
 export default function ProfileCard({ team }) {
   return (
     <div className="flex w-full max-w-[400px] items-center gap-4">
-      <Avatar src={team.image} alt="profile image" size="xxl" />
+      <Avatar
+        src={team.image}
+        alt="profile image"
+        className="h-[80px] w-[80px] sm:h-[100px] sm:w-[100px]"
+      />
 
       <div className="grid items-start gap-4">
         <div>
-          <Typography className="text-[24px] font-extrabold text-white">
+          <Typography className="text-[20px] font-extrabold text-white sm:text-[24px]">
             {team.name}
           </Typography>
           <Typography className="font-semibold text-gray-500">
