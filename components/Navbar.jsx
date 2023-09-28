@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button, Typography } from "@material-tailwind/react";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 // navbar link
 const navbarLink = [
@@ -21,6 +22,7 @@ const navbarLink = [
 
 export default function Navbar() {
   const [stickyNavbar, setStickyNavbar] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -52,8 +54,12 @@ export default function Navbar() {
           </Typography>
         </Link>
 
-        <div className="flex items-center gap-12">
-          <ul className="inline-flex items-center gap-6">
+        <div
+          className={`fixed right-[6%] top-20 flex w-[260px] origin-top-right flex-col gap-8 bg-gray-800 px-7 py-8 transition md:static md:inset-0 md:w-auto md:scale-100 md:flex-row md:gap-12 md:bg-transparent md:p-0 ${
+            navbarOpen ? "scale-100" : "scale-0"
+          }`}
+        >
+          <ul className="flex flex-col gap-6 md:flex-row md:items-center">
             {navbarLink.map((link, index) => {
               return (
                 <Link
@@ -70,10 +76,17 @@ export default function Navbar() {
           <Button
             size="lg"
             color="pink"
-            className="rounded-none text-base font-bold normal-case"
+            className="w-full rounded-none text-base font-bold normal-case md:w-auto"
           >
             Contact us
           </Button>
+        </div>
+
+        <div
+          className="cursor-pointer p-1 text-[1.3rem] text-white hover:bg-gray-800 md:hidden"
+          onClick={() => setNavbarOpen(!navbarOpen)}
+        >
+          <HiOutlineMenuAlt2 />
         </div>
       </div>
     </nav>
