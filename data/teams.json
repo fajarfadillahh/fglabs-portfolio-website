@@ -1,0 +1,40 @@
+[
+  {
+    "image": "/assets/profile-gufron.png",
+    "name": "Gufronnaka Arif Wildan",
+    "role": "Backend Developer",
+    "socmed": [
+      {
+        "text": "Github",
+        "path": "https://github.com/gufronnakaaw"
+      },
+      {
+        "text": "Instagram",
+        "path": "https://instagram.com/gufronnakaaw"
+      },
+      {
+        "text": "Website",
+        "path": "https://wildandev.com"
+      }
+    ]
+  },
+  {
+    "image": "/assets/profile-fajar.png",
+    "name": "Fajar Fadillah Agustian",
+    "role": "Frontend Developer",
+    "socmed": [
+      {
+        "text": "Github",
+        "path": "https://github.com/fajarfadillahh"
+      },
+      {
+        "text": "Instagram",
+        "path": "https://www.instagram.com/fajarfadillah.ag"
+      },
+      {
+        "text": "Website",
+        "path": "https://fajarfadillah.netlify.app"
+      }
+    ]
+  }
+]

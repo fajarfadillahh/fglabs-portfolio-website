@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Avatar, Tooltip, Typography } from "@material-tailwind/react";
+import { RiGithubFill, RiInstagramLine, RiGlobalLine } from "react-icons/ri";
 
 export default function ProfileCard({ team }) {
   return (
@@ -17,10 +18,10 @@ export default function ProfileCard({ team }) {
         </div>
 
         <div className="inline-flex items-center gap-3">
-          {team.sosmeds.map((sosmed, index) => {
+          {team.socmed.map((social, index) => {
             return (
               <Tooltip
-                content={sosmed.text}
+                content={social.text}
                 placement="top"
                 animate={{
                   mount: { scale: 1, y: 0 },
@@ -30,10 +31,13 @@ export default function ProfileCard({ team }) {
               >
                 <Link
                   key={index}
-                  href={sosmed.path}
+                  href={social.path}
                   className="rounded-full bg-[#2E3235] p-1.5 text-[1.5rem] text-gray-500 hover:bg-pink-500 hover:text-white"
+                  target="_blank"
                 >
-                  {sosmed.icon}
+                  {social.text == "Github" ? <RiGithubFill /> : null}
+                  {social.text == "Instagram" ? <RiInstagramLine /> : null}
+                  {social.text == "Website" ? <RiGlobalLine /> : null}
                 </Link>
               </Tooltip>
             );

@@ -1,62 +1,13 @@
 import Head from "next/head";
 import { Typography } from "@material-tailwind/react";
-import { RiGithubFill, RiInstagramLine, RiGlobalLine } from "react-icons/ri";
+import path from "path";
+import { promises as fs } from "fs";
 
 // import components
 import Layout from "@/components/Layout";
 import ProfileCard from "@/components/Card/ProfileCard";
 
-// dummy data
-const teams = [
-  {
-    id: 1,
-    image: "/assets/profile-gufron.png",
-    name: "Gufronnaka Arif Wildan",
-    role: "Backend Developer",
-    sosmeds: [
-      {
-        text: "Github",
-        path: "#",
-        icon: <RiGithubFill />,
-      },
-      {
-        text: "Instagram",
-        path: "#",
-        icon: <RiInstagramLine />,
-      },
-      {
-        text: "Website",
-        path: "#",
-        icon: <RiGlobalLine />,
-      },
-    ],
-  },
-  {
-    id: 2,
-    image: "/assets/profile-fajar.png",
-    name: "Fajar Fadillah Agustian",
-    role: "Frontend Developer",
-    sosmeds: [
-      {
-        text: "Github",
-        path: "#",
-        icon: <RiGithubFill />,
-      },
-      {
-        text: "Instagram",
-        path: "#",
-        icon: <RiInstagramLine />,
-      },
-      {
-        text: "Website",
-        path: "#",
-        icon: <RiGlobalLine />,
-      },
-    ],
-  },
-];
-
-export default function Team() {
+export default function Team({ teams }) {
   return (
     <>
       <Head>
@@ -91,4 +42,17 @@ export default function Team() {
       </Layout>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const dir = path.join(process.cwd(), "data", "teams.json");
+  const file = await fs.readFile(dir);
+
+  const data = JSON.parse(file.toString());
+
+  return {
+    props: {
+      teams: data,
+    },
+  };
 }
