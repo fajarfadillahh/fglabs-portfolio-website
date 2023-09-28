@@ -25,7 +25,10 @@
         "url": "/content/techs/icon-figma.svg"
       }
     ],
-    "deployments": ["https://ponic-voting.vercel.app", "https://ponic.site"],
+    "deployments": [
+      "https://ponic-voting.vercel.app",
+      "https://ponic.site"
+    ],
     "tags": [
       {
         "name": "UI Design",
@@ -52,7 +55,7 @@
     }
   },
   {
-    "title": "Ponic Rest API: Combination Of The Modern Technologies",
+    "title": "Ponic REST API: Combination Of The Modern Technologies",
     "slug": "ponic-rest-api-combination-of-the-modern-technologies",
     "image": "/content/image/portfolio-2.svg",
     "techs": [
@@ -77,7 +80,10 @@
         "url": "/content/techs/icon-postgresql.svg"
       }
     ],
-    "deployments": ["https://api.ponic.site", "https://ponic.cyclic.app"],
+    "deployments": [
+      "https://api.ponic.site",
+      "https://ponic.cyclic.app"
+    ],
     "tags": [
       {
         "name": "Database",
@@ -160,6 +166,61 @@
         "Quran Text Search: Search for verses and key words in the Quran quickly and accurately.",
         "Asmaul Husna: Discover and explore Asmaul Husna, the 99 beautiful names of Allah, along with their meanings and significance.",
         "Muslimify is designed using the latest technology to provide comfort for users."
+      ],
+      "mission": "Muslimify's main mission is to be a loyal partner for Muslims in their journey to study the Koran, understand Asmaul Husna, and enrich their understanding of the Islamic religion. With a strong determination to provide benefits to others."
+    }
+  },
+  {
+    "title": "Muslimify API: Free Access to Quranic Data Anytime",
+    "slug": "muslimify-api-free-access-to-quranic-data-anytime",
+    "image": "/content/image/portfolio-4.svg",
+    "techs": [
+      {
+        "name": "Javascript",
+        "url": "/content/techs/icon-js.svg"
+      },
+      {
+        "name": "Node Js",
+        "url": "/content/techs/icon-nodejs.svg"
+      },
+      {
+        "name": "Express JS",
+        "url": "/content/techs/icon-expressjs.svg"
+      },
+      {
+        "name": "Vercel",
+        "url": "/content/techs/icon-vercel.svg"
+      }
+    ],
+    "deployments": [
+      "https://apimuslimify.vercel.app",
+      "https://github.com/gufronnakaaw/muslimify-api"
+    ],
+    "tags": [
+      {
+        "name": "Node JS",
+        "value": "Node JS"
+      },
+      {
+        "name": "Backend",
+        "value": "Backend"
+      },
+      {
+        "name": "Express JS",
+        "value": "Express JS"
+      }
+    ],
+    "content": {
+      "overview": "Muslimify API provides free access to Quranic data for your website, mobile app, or any other application. We offer multiple endpoints to meet your needs, and you can access it anytime.",
+      "features": [
+        "Asmaul Husna API",
+        "Surah API",
+        "List Surah API",
+        "Prayer Intention API",
+        "Prayer Intention By Time API",
+        "Random Islamic Quote API",
+        "All Islamic Quote API",
+        "Daily Doa API"
       ],
       "mission": "Muslimify's main mission is to be a loyal partner for Muslims in their journey to study the Koran, understand Asmaul Husna, and enrich their understanding of the Islamic religion. With a strong determination to provide benefits to others."
     }
