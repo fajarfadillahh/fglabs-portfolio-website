@@ -1,14 +1,13 @@
 import Head from "next/head";
 import { Typography } from "@material-tailwind/react";
+import path from "path";
+import { promises as fs } from "fs";
 
 // import components
 import Layout from "@/components/Layout";
 import PortfolioCard from "@/components/Card/PortfolioCard";
 
-// import data
-import data from "@/data";
-
-export default function Portfolio() {
+export default function Portfolio({ data }) {
   return (
     <>
       <Head>
@@ -39,4 +38,17 @@ export default function Portfolio() {
       </Layout>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const dir = path.join(process.cwd(), "data", "index.json");
+  const file = await fs.readFile(dir);
+
+  const data = JSON.parse(file.toString());
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
