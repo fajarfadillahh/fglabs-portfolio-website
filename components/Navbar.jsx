@@ -55,7 +55,7 @@ export default function Navbar() {
         </Link>
 
         <div
-          className={`fixed right-[6%] top-20 flex w-[260px] origin-top-right flex-col gap-8 bg-gray-800 px-7 py-8 transition md:static md:inset-0 md:w-auto md:scale-100 md:flex-row md:gap-12 md:bg-transparent md:p-0 ${
+          className={`fixed right-[6%] top-24 flex w-[260px] origin-top-right flex-col gap-8 bg-gray-800 px-7 py-8 transition md:static md:inset-0 md:w-auto md:scale-100 md:flex-row md:gap-12 md:bg-transparent md:p-0 ${
             navbarOpen ? "scale-100" : "scale-0"
           }`}
         >

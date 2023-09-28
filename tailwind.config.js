@@ -11,6 +11,9 @@ export default withMT({
       sans: ["Figtree", "sans-serif"],
     },
     extend: {
+      screens: {
+        xl: "1120px",
+      },
       colors: {
         gray: {
           950: "#212529",
