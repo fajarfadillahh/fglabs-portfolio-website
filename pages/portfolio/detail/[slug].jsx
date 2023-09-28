@@ -28,24 +28,24 @@ export default function DetailPortfolio({ data }) {
                 <Typography className="mb-3 text-[24px] font-bold text-white">
                   Details portfolio
                 </Typography>
-                <Typography className="max-w-[768px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[56px] font-black leading-[108%] text-transparent">
+                <Typography className="max-w-[768px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[42px] font-black leading-[108%] text-transparent sm:text-[56px]">
                   {data.title}
                 </Typography>
               </div>
 
-              <div className="h-[600px] w-full">
+              <div className="w-full">
                 <Image
                   src={data.image}
                   width={1920}
                   height={1080}
                   alt={`image ${data.title}`}
                   priority={true}
-                  className="h-full w-full object-cover object-center"
+                  className="max-h-[500px] w-full object-cover object-center"
                 />
               </div>
             </div>
 
-            <div className="flex items-start justify-evenly gap-16">
+            <div className="flex flex-col items-center gap-16 lg:flex-row lg:items-start lg:justify-center xl:justify-evenly">
               <div className="grid max-w-[545px] gap-6">
                 <div className="grid gap-3">
                   <Typography color="white" className="text-[28px] font-bold">
@@ -80,7 +80,7 @@ export default function DetailPortfolio({ data }) {
                 </div>
               </div>
 
-              <div className="grid justify-start gap-12">
+              <div className="grid w-full max-w-[545px] gap-12 lg:w-auto">
                 <div className="grid gap-3">
                   <Typography color="white" className="text-[28px] font-bold">
                     Technologies
