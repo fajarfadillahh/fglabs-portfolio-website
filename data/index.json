@@ -25,7 +25,10 @@
         "url": "/content/techs/icon-figma.svg"
       }
     ],
-    "deployments": ["https://ponic-voting.vercel.app", "https://ponic.site"],
+    "deployments": [
+      "https://ponic-voting.vercel.app",
+      "http://ponic.site"
+    ],
     "tags": [
       {
         "name": "UI Design",
@@ -77,7 +80,9 @@
         "url": "/content/techs/icon-postgresql.svg"
       }
     ],
-    "deployments": ["https://api.ponic.site", "https://ponic.cyclic.app"],
+    "deployments": [
+      "https://ponic.cyclic.app"
+    ],
     "tags": [
       {
         "name": "Database",
@@ -174,7 +179,7 @@
         "url": "/content/techs/icon-js.svg"
       },
       {
-        "name": "Node Js",
+        "name": "Node JS",
         "url": "/content/techs/icon-nodejs.svg"
       },
       {
