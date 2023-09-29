@@ -6,10 +6,6 @@ export default function Document() {
       <Head>
         <link rel="shortcut icon" href="/assets/icon.svg" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/assets/icon.svg" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
       </Head>
 
       <body>
