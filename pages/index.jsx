@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          Welcome to FGlabs. - Making ideas realize with technology and
+          Welcome to FGLabs. - Making ideas realize with technology and
           creativity
         </title>
       </Head>
@@ -28,7 +28,7 @@ export default function Home() {
           <div className="container relative flex flex-col items-center justify-center gap-14">
             <div className="text-center">
               <Typography className="mb-4 text-[24px] font-bold text-white">
-                Welcome to FGlabs<span className="text-pink-500">.</span>
+                Welcome to FGLabs<span className="text-pink-500">.</span>
               </Typography>
               <Typography className="max-w-[910px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[42px] font-black leading-[108%] text-transparent sm:text-[56px] md:text-[76px] lg:text-[86px]">
                 Making Ideas Realize with Technology and Creativity

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container flex h-20 items-center justify-center border-t-[2px] border-gray-800">
         <Typography variant="paragraph" className="font-medium text-white">
           &copy; Copyrights {new Date().getFullYear()}{" "}
-          <span className="font-extrabold text-pink-500">FGlabs.</span> -
+          <span className="font-extrabold text-pink-500">FGLabs.</span> -
           Develop with ❤️
         </Typography>
       </div>

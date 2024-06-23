@@ -11,7 +11,7 @@ export default function Portfolio({ data }) {
   return (
     <>
       <Head>
-        <title>Creative Portfolio: FGlabs Latest Works</title>
+        <title>Creative Portfolio: FGLabs Latest Works</title>
       </Head>
 
       <Layout>
@@ -24,7 +24,7 @@ export default function Portfolio({ data }) {
                 Our portfolio
               </Typography>
               <Typography className="max-w-[725px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[42px] font-black leading-[108%] text-transparent sm:text-[56px]">
-                Creative Portfolio: FGlabs Latest Works
+                Creative Portfolio: FGLabs Latest Works
               </Typography>
             </div>
 

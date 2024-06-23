@@ -11,7 +11,7 @@ export default function Team({ teams }) {
   return (
     <>
       <Head>
-        <title>FGlabs: Introducing Our Talented Team</title>
+        <title>FGLabs: Introducing Our Talented Team</title>
       </Head>
 
       <Layout>
@@ -24,7 +24,7 @@ export default function Team({ teams }) {
                 Solid teams
               </Typography>
               <Typography className="max-w-[725px] bg-gradient-to-tr from-pink-500 to-white bg-clip-text text-[42px] font-black leading-[108%] text-transparent sm:text-[56px]">
-                FGlabs: Introducing Our Talented Team
+                FGLabs: Introducing Our Talented Team
               </Typography>
             </div>
 
