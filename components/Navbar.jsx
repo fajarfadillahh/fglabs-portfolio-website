@@ -1,7 +1,8 @@
+import { Button, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Button, Typography } from "@material-tailwind/react";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 
 // navbar link
@@ -21,6 +22,7 @@ const navbarLink = [
 ];
 
 export default function Navbar() {
+  const router = useRouter();
   const [stickyNavbar, setStickyNavbar] = useState(false);
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -50,7 +52,7 @@ export default function Navbar() {
             priority={true}
           />
           <Typography className="text-[24px] font-extrabold text-white">
-            FGlabs.
+            FGLabs.
           </Typography>
         </Link>
 
@@ -60,17 +62,35 @@ export default function Navbar() {
           }`}
         >
           <ul className="flex flex-col gap-6 md:flex-row md:items-center">
-            {navbarLink.map((link, index) => {
-              return (
-                <Link
-                  key={index}
-                  href={link.path}
-                  className="font-medium capitalize text-white hover:text-pink-500"
-                >
-                  {link.text}
-                </Link>
-              );
-            })}
+            <Link
+              href="/"
+              className={`font-medium capitalize hover:text-pink-500 ${
+                router.pathname == "/" ? "text-pink-500" : "text-white"
+              }`}
+            >
+              Home
+            </Link>
+
+            <Link
+              href="/portfolio"
+              className={`font-medium capitalize hover:text-pink-500 ${
+                router.pathname == "/portfolio" ||
+                router.pathname.includes("/portfolio/detail/[slug]")
+                  ? "text-pink-500"
+                  : "text-white"
+              }`}
+            >
+              Portfolio
+            </Link>
+
+            <Link
+              href="/team"
+              className={`font-medium capitalize hover:text-pink-500 ${
+                router.pathname == "/team" ? "text-pink-500" : "text-white"
+              }`}
+            >
+              Team
+            </Link>
           </ul>
 
           <Button
